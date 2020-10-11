@@ -40,17 +40,6 @@ class Graphe:
             print()
 
 
-    def Voisins(self):
-        for i in range(len(self.Matrice)):
-            Noeud=self.nd()
-            Noeud.nom=self.V[i]
-
-            for j in range(len(self.Matrice)):
-                if self.Matrice[i][j]==1:
-                    visited=False
-                    Noeud.voisins.append((self.V[j],visited))
-            self.Liste.append(Noeud)
-
 
 
 class Noeud:
